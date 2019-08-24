@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Auto-Caption</title>
+  <meta name="description" content="Automatic Generation for Chart Captions">
+  <meta name="author" content="Can Liu, Liwenhan Xie, Xiaoru Yuan">
+  <link rel="icon" type="image/png" href="./lib/fig/icon.png" />
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="./lib/css/mdb.min.css">
+  <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./lib/css/font-awesome.css">
+</head>
+
+<body>
+  <script src="./lib/js/jquery-3.4.1.min.js"></script>
+  <script src="./lib/js/popper.min.js"></script>
+  <script src="./lib/js/d3.v5.min.js"></script>
+  <script src="./lib/js/bootstrap.min.js"></script>
+  <script src="./lib/js/mdb.min.js"></script>
+
+  <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Auto-Caption</a>
+
+<span><i class="fas fa-upload" style="color: white;"></i>&nbsp;</span>
+  <div class="input-group" style="width: 40vh;">
+       <input type="file" id="imageLoader" name="imageLoader" style="color: white;" class="inputfile">
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="boxSwitch">
+    <label class="custom-control-label" for="boxSwitch" style="color:white;">Box &nbsp;</label>
+
+  </div>
+
+  <button type="button" id="colorConfirm" class="btn" style="color: white;">OK</button>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <!-- <div class="collapse navbar-collapse" id="basicExampleNav"> -->
+
+    <!-- Links -->
+    <!-- <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li> -->
+
+      <!-- Dropdown -->
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+    </ul> -->
+    <!-- Links -->
+
+    <!-- <form class="form-inline" style="text-align: right">
+      <div class="md-form my-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </form>
+  </div> -->
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+  <!-- <input class="btn btn-primary" type="file" id="imageLoader" name="imageLoader" /> -->
+  <div id="canvasWrapper">
+    <canvas id="imageCanvas"></canvas>
+  </div>
+
+
+
+
+  <script type="module" src="src/js/main.js"></script>
+</body>
+
+</html>
